@@ -1,0 +1,11 @@
+User-Agent: *
+Allow: /
+Disallow: /besom/
+Disallow: /install/
+Disallow: /codes/
+Disallow: /include/
+Disallow: /lang/
+Disallow: /library/
+Disallow: /modul/
+Disallow: /slider/
+Disallow: /template/

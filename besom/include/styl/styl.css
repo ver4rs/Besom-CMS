@@ -1,0 +1,60 @@
+body {
+	/*margin: 0px;
+	padding: 0px;
+
+	text-align: center;
+	font-family: arial, helvetica, sans-serif;
+	color: #565656;*/
+}
+/*
+p,span, h1, h2, h3, h4, h5, h6, img, table, tr, td, tbody, a, li, ul, ol { margin: 0px; padding: 0px; }
+a { color: #32cab4; font-size: 12px; text-decoration: none; }*/
+/*a:hover { color: red; }
+a:active { color: blue; }
+a:visited { color: green; }
+*/
+a { text-decoration: none; }
+/*  fonty    */
+@font-face {
+	font-family: Future;
+	/*src: url('http://www.localhost.eu/include/font/Futura-Light.ttf');*/
+	src: url('http://localhost/besom/include/font/Futura-Light.ttf');
+}
+
+@font-face {
+	font-family: Bioli;
+	src: url('http://localhost/besom/include/font/Bioliquid.ttf');
+}
+
+
+/*
+.vrch { width: 100%; background: #353535; height: auto; margin: 0px; padding: 0px; position: relative; }
+.vrch #panelik { height: 18px;  display: block; padding: 4px 20px; font-size: 14px;  }
+.vrch #panelik .milang { width: 30%; display: block; overflow: hidden; position: absolute; text-align: left;  }
+.vrch #panelik .cmslogobesom { float: right; width: 30%;  text-align: center; }
+.vrch #panelik .user { float: right; width: 30%; text-align: right;  }
+
+.vrch #menu { height: 40px; background: #3F3F3F; padding-top: 10px; }
+*/
+
+
+/*
+#celok {
+	margin: 0px;
+	padding: 0px;
+	text-align: center;
+
+	background-color: #ebebeb;
+}
+
+#celok .telo {
+	margin: 0px;
+	padding: 0px;
+	width: 1000px;
+	margin-left: auto;
+	margin-right: auto;
+	position: relative;
+
+	background-color: #ebebeb;
+}
+*/

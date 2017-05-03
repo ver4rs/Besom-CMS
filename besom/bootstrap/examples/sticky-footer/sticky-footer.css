@@ -1,0 +1,23 @@
+/* Sticky footer styles
+-------------------------------------------------- */
+
+
+/* Set the fixed height of the footer here */
+#footer {
+  height: 60px;
+  background-color: #454545;
+}
+
+
+/* Custom page CSS
+-------------------------------------------------- */
+/* Not required for template or sticky footer method. */
+
+#footer .container {
+  width: auto;
+  max-width: 680px;
+  padding: 0 15px;
+}
+#footer .container .credit {
+  margin: 20px 0;
+}

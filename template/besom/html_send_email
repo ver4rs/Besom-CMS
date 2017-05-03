@@ -1,0 +1,8 @@
+<div id="okno2">
+		<div class="vyskoci2" id="vysk2">
+			<center style="color:#000;cursor:pointer;float:right;margin-right:-20px;margin-top:-20px;" onmouseup="document.getElementById('okno2').style.display='none'">
+					
+					<img src="https://lh6.googleusercontent.com/-uSW_8HWcJII/T9shJ_kvWwI/AAAAAAAACgI/9xs1KMJtUtc/s40/exeideasclose.png">
+			</center>
+		</div>
+</div>	

@@ -1,0 +1,74 @@
+<IfModule mod_rewrite.c>
+
+
+RewriteBase /besom
+
+Options +FollowSymlinks
+RewriteEngine On
+
+
+ErrorDocument 400 /error.php
+ErrorDocument 401 /error.php
+ErrorDocument 403 /error.php
+ErrorDocument 404 /error.php
+ErrorDocument 500 /error.php
+
+
+#RewriteRule ^(.*)$ index.php?menu=$1 [L]
+#RewriteRule ^kotakt$ index.php?menu=kotakt [L]
+
+
+#RewriteRule ^([^/]*)\.html$ /?menu=$1 [L]
+
+
+#RewriteCond %{HTTP_HOST} ^localhost\.6f\.sk
+#RewriteRule (.*) http://www.localhost.6f.sk/$1 [R=301,L]
+
+#RewriteRule ^([A-Za-z0-9-]+)/?$ index.php?menu=$1
+
+#RewriteRule    ^([A-Za-z0-9-]+)/?$    index.php?menu=$1    [NC,L]    # Process product requests
+#RewriteRule    ^([A-Za-z0-9-]+)/([A-Za-z0-9-]+)/?$    index.php?menu=$1&page=$2    [NC,L]    # Process blog posts
+
+
+#RewriteRule /clanok/([A-Z,a-z,0-9,\_]*) /index.php?article=$1 [L]
+#RewriteRule ^clanok/([A-Z,a-z,0-9,\_]*)/$ http://localhost/besom/index.php?article=$1 [L]
+
+
+#RewriteRule ([A-Z,a-z,0-9,\_]*)/([A-Z,a-z,0-9,\_]*) /menu.php?menu=$1/$2
+#RewriteRule ^([A-Z,a-z,0-9,\_]*)/([A-Z,a-z,0-9,\_]*)/$ http://elektrobattery.6f.sk/menu.php?menu=$1/$2/
+
+#RewriteRule /([A-Z,a-z,0-9,\_]*) /menu.php?menu=$1
+#RewriteRule ^([A-Z,a-z,0-9,\_]*)/$ http://elektrobattery.6f.sk/menu.php?menu=$1
+
+# MENU NAVIGACIA este dorobit strankovanie
+#RewriteCond %{REQUEST_URI} ([A-Z,a-z,0-9,\_]*)/
+#RewriteRule menu/([A-Z,a-z,0-9,\_]*)/([A-Z,a-z,0-9,\_]*)/ /clanokMenu.php?menu=$1/$2
+#RewriteRule ^menu/([A-Z,a-z,0-9,\_]*)/([A-Z,a-z,0-9,\_]*)/$ http://elektrobattery.6f.sk/clanokMenu.php?menu=$1/$2/ [R,L]
+
+#RewriteRule menu/([A-Z,a-z,0-9,\_]*)/([A-Z,a-z,0-9,\_]*)/strana/([0-9]+)/ /index.php?sek=$1&kat=$2&strana=$3
+#RewriteRule ^menu/([A-Z,a-z,0-9,\_]*)/([A-Z,a-z,0-9,\_]*)/strana/([0-9]+)$ http://elektrobattery.6f.sk/menu/$1/$2/strana/$3 [R,L]
+
+#RewriteCond %{REQUEST_URI} ([A-Z,a-z,0-9,\_]*)/
+#RewriteRule menu/([A-Z,a-z,0-9,\_]*) /clanokMenu.php?menu=$1
+#RewriteRule ^menu/([A-Z,a-z,0-9,\_]*)$ http://elektrobattery.6f.sk/clanokMenu.php?menu=$1 [R,NC]
+
+
+
+#RewriteRule index.php?sek=([A-Z,a-z,0-9,\_]*)/strana/([0-9]+) /index.php?sek=$1&strana=$2
+#RewriteRule ^menu/([A-Z,a-z,0-9,\_]*)/strana/([0-9]+)$ http://elektrobattery.6f.sk/menu/$1/strana/$2 [R,NC]
+# KONIEC MENU
+
+
+#DOMOV
+#RewriteRule strana/([0-9]+) /?strana=$1
+#RewriteRule ^strana/([0-9]+)$ http://elektrobattery.6f.sk?strana=$1 [R]
+# KONIEC DOMOV
+
+#HLADAT
+#RewriteRule /index.php?hladaj=$1&strana=([0-9]+)/ /index.php?hladaj=$1&strana=$2
+#RewriteRule ^index.php?hladaj=$1&strana=([0-9]+)$ http://elektrobattery.6f.sk/?hladaj=$1&strana=$2/ [R]
+# KONIEC HLADAT
+
+
+
+</IfModule>

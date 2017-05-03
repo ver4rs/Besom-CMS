@@ -1,0 +1,316 @@
+/*
+* Skeleton V1.2
+* Copyright 2011, Dave Gamache
+* www.getskeleton.com
+* Free to use under the MIT license.
+* http://www.opensource.org/licenses/mit-license.php
+* 6/20/2012
+*/
+
+
+/* Table of Content
+==================================================
+	#Reset & Basics
+	#Basic Styles
+	#Site Styles
+	#Typography
+	#Links
+	#Lists
+	#Images
+	#Buttons
+	#Forms
+	#Misc */
+
+
+/* #Reset & Basics (Inspired by E. Meyers)
+================================================== */
+	html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+		margin: 0;
+		padding: 0;
+		border: 0;
+		font-size: 100%;
+		font: inherit;
+		vertical-align: baseline; }
+	article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+		display: block; }
+	html{ overflow-x: hidden; }
+	body {
+		line-height: 1; }
+	ol, ul {
+		list-style: none; }
+	blockquote, q {
+		quotes: none; }
+	blockquote:before, blockquote:after,
+	q:before, q:after {
+		content: '';
+		content: none; }
+	table {
+		border-collapse: collapse;
+		border-spacing: 0; }
+
+
+/* #Basic Styles
+================================================== */
+	* { 
+		-moz-box-sizing: border-box; 
+		-webkit-box-sizing: border-box; 
+		box-sizing: border-box;
+	}
+	*::-moz-selection, ::selection {
+		background: #60a2a8;
+		color: white;
+		text-shadow: none;
+	}
+	body {
+		background: #f8f8f8;
+		font: 13px/21px "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+		color: #333;
+		-webkit-font-smoothing: antialiased; /* Fix for webkit rendering */
+		-webkit-text-size-adjust: 100%;
+ }
+
+
+/* #Typography
+================================================== */
+	h1, h2, h3, h4, h5, h6 {
+		color: #000;
+		font-family: "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+		font-weight: bold;
+		text-transform: uppercase;
+		
+		}
+	h1 a, h2 a, h3 a, h4 a, h5 a, h6 a { font-weight: inherit; }
+	h1 { font-size: 36px; line-height: 48px; margin-bottom: 20px;}
+	h2 { font-size: 30px; line-height: 36px; margin-bottom: 20px;}
+	h3 { font-size: 24px; line-height: 30px; margin-bottom: 20px;}
+	h4 { font-size: 18px; line-height: 24px; margin-bottom: 20px;}
+	h5 { font-size: 15px; line-height: 24px; margin-bottom: 20px;}
+	h6 { font-size: 13px; line-height: 18px; margin-bottom: 20px;}
+	.subheader { color: #777; }
+
+	p { margin: 0 0 20px 0; }
+	p img { margin: 0; }
+	p.lead { font-size: 21px; line-height: 27px; color: #777;  }
+
+	em { font-style: italic; }
+	/*strong { font-weight: bold; color: #333; }*/
+	small { font-size: 80%; }
+
+/*	Blockquotes  */
+	blockquote, blockquote p { font-size: 15px; line-height: 24px; color: #9b9b9b; font-style: italic; padding-left: 100px; }
+	blockquote { position: relative; margin: 40px 0; padding: 30px 0; border-left: 5px solid #60a2a8; }
+	blockquote:before{ position: absolute; top: 40%; left: 7%; font-style: normal; font-size: 2em; vertical-align: center; font-family: FontAwesome; content:"\f10d";  color: #e5e5e5;  }
+	blockquote cite { padding-left: 100px; font-size: 13px; color: #000; text-transform: uppercase; font-weight: bold; font-style: normal; }
+	blockquote cite:before { content: "- "; }
+	blockquote cite a, blockquote cite a:visited, blockquote cite a:visited { color: #60a2a8; }
+	hr { border: solid #e5e5e5; border-width: 1px 0 0; clear: both; margin: 10px 0 30px; height: 0; }
+
+
+/* #Links
+================================================== */
+	a, a:visited { color: #60a2a8;   text-decoration: none; outline: 0; -webkit-transition: color .3s; -moz-transition: color .3s; }
+	a:hover, a:focus { color: #86c7cb; cursor: pointer;  }
+	p a, p a:visited { line-height: inherit; }
+
+
+/* #Lists
+================================================== */
+	ul, ol { margin-bottom: 20px; }
+	ul { list-style: none outside; }
+	ol { list-style: decimal; }
+	ol, ul.square, ul.circle, ul.disc { margin-left: 30px; }
+	ul.square { list-style: square outside; }
+	ul.circle { list-style: circle outside; }
+	ul.disc { list-style: disc outside; }
+	ul ul, ul ol,
+	ol ol, ol ul { margin: 4px 0 5px 30px; font-size: 90%;  }
+	ul ul li, ul ol li,
+	ol ol li, ol ul li { margin-bottom: 6px; }
+	li { line-height: 18px; margin-bottom: 10px; }
+	ul.large li { line-height: 21px; }
+	li p { line-height: 21px; }
+
+/* #Images
+================================================== */
+
+	img.scale-with-grid {
+		max-width: 100%;
+		height: auto; }
+	
+	img{ margin-bottom: 20px;
+		-webkit-transition: border .3s;
+		-moz-transition: border .3s;
+		
+	}
+	a img:hover{ border: 1px solid #60a2a8; }
+	
+/* #Video
+================================================== */
+	video {
+	max-width: 100%;
+	height: auto;
+	}
+
+	.video-container, .iframe-container{
+		position: relative;
+		padding-bottom: 56.25%;
+		padding-top: 30px;
+		height: 0;
+		overflow: hidden;
+		margin-bottom: 40px; 
+	}
+
+	.video-container iframe, .iframe-container iframe,  
+	.video-container object, 
+	.video-container embed {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+	}
+		
+/* #Buttons
+================================================== */
+
+	.button, .tag,
+	button,
+	input[type="submit"],
+	input[type="reset"],
+	input[type="button"] {
+	  background: transparent;
+	  border: 1px solid #e5e5e5;
+	  -moz-border-radius: 25px;
+	  -webkit-border-radius: 25px;
+	  border-radius: 25px;
+	  color: #60a2a8;
+	  display: inline-block;
+	  font-size: 13px;
+	  font-weight: bold;
+	  text-decoration: none;
+	  cursor: pointer;
+	  margin: 10px 0;
+	  line-height: normal;
+	  padding: 10px 20px;
+	  font-family: "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif; 
+	  -webkit-transition: background .3s;
+	  -moz-transition: background .3s;
+	}
+	  
+	.button:hover, .tag:hover,
+	button:hover,
+	input[type="submit"]:hover,
+	input[type="reset"]:hover,
+	input[type="button"]:hover {
+		color: #fff;
+	    background: #60a2a8;
+		border: 1px solid #569297;
+	}
+	.button:active, .tag:active,
+	button:active,
+	input[type="submit"]:active,
+	input[type="reset"]:active,
+	input[type="button"]:active {
+		text-shadow: 0 -1px 0 rgba(0,0,0,0.3);
+		box-shadow: inset 0px 1px 2px rgba(0,0,0,0.3);
+		border: 1px solid #385f63;
+		background: #58959b;
+		
+	}
+
+	/* BUTTON TYPES */
+	.round{
+	  	-moz-border-radius: 2px;
+	  	-webkit-border-radius: 2px;
+		border-radius: 2px;
+		
+	}
+	
+	.solid{
+		-moz-border-radius: 0px;
+	 	-webkit-border-radius: 0px;
+	  	border-radius: 0px;
+	}
+	/* SIZE */
+	.small{ font-size: 11px; padding: 5px 10px; }
+	.normal{ }
+	.large{ font-size: 16px; padding: 10px 25px; }
+	
+	.button.full-width,
+	button.full-width,
+	input[type="submit"].full-width,
+	input[type="reset"].full-width,
+	input[type="button"].full-width {
+		width: 100%;
+		padding-left: 0 !important;
+		padding-right: 0 !important;
+		text-align: center; }
+
+	/* Fix for odd Mozilla border & padding issues */
+	button::-moz-focus-inner,
+	input::-moz-focus-inner {
+    border: 0;
+    padding: 0;
+	}
+
+
+/* #Forms
+================================================== */
+	/* FORM */
+
+form { margin-bottom: 20px; }
+fieldset {margin-bottom: 20px; }
+input[type="text"], input[type="password"], input[type="email"], input[type="url"], textarea, select {
+	border: 1px solid #e5e5e5;
+	padding: 10px 20px;
+	outline: none;
+	-moz-border-radius: 25px;
+	-webkit-border-radius: 25px;
+	border-radius: 25px;
+	font: 13px "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+	color: #333;
+	margin: 0;
+	width: 280px;
+	max-width: 100%;
+	display: block;
+	margin-bottom: 15px;
+	background: #fff; 
+	-webkit-transition: border .5s;
+	-moz-transition: border .5s;
+}
+input[type="text"]:hover, input[type="password"]:hover, input[type="email"]:hover, input[type="url"]:hover, textarea:hover{
+	border: 1px solid #86c7cb;
+	background: #f8f8f8; 
+}
+input[type="text"]:focus, input[type="password"]:focus, input[type="email"]:focus, input[type="url"]:focus, textarea:focus {
+	border: 1px solid #86c7cb;
+	background: #f8f8f8;
+	color: #000;
+}
+
+
+textarea{ width: 100%; }
+	
+	textarea {
+		min-height: 150px;  }
+	label,
+	legend {
+		display: block;
+		font-weight: bold;
+		font-size: 13px;  }
+	select {
+		width: 220px; }
+	input[type="checkbox"] {
+		display: inline; }
+	label span,
+	legend span {
+		font-weight: normal;
+		font-size: 13px;
+		color: #444; }
+
+/* #Misc
+================================================== */
+	.remove-bottom { margin-bottom: 0 !important; }
+	.half-bottom { margin-bottom: 10px !important; }
+	.add-bottom { margin-bottom: 20px !important; }
+
